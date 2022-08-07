@@ -1,0 +1,33 @@
+<!DOCTPYE html>
+<html>
+<head>
+<title>no bitches.com</title>
+<link href="./bitch.css" rel="stylesheet" />
+<script>
+const bitch = () => {
+  window.location.href = ("http://127.0.0.1:3000/?url=" + document.getElementById("video").value + "&text=" + document.getElementById("txt").value)
+
+}
+</script>
+</head>
+<body>
+
+
+<div class="container">
+	<div class="child">
+	  <h1 style="margin:10px">DumpyAI</h1>
+ 	  <h2  style="margin:10px">we convert your voice to whatever text format you input</h2>
+	  <span  style="margin:10px;">MP4 File link: <input id="video" type="text"  placeholder="Upload video link..." style="width: 800px;border-radius: 10px; padding: 10px; border: none;" /> </span>
+	 <span  style="margin:10px;"> Your text: <input style="border-radius: 10px; padding: 10px; border: none; width:800px;" id="txt" type="text" placeholder="Upload formatted text..." /> </span>
+	<button style="margin:10px; border-radius: 10px; padding: 10px; border: none; cursor: pointer;"  onclick="bitch()">convert voice
+</button>
+        </div>
+</div>
+
+<img src="./bitch.JPG" class="charlie" />
+<img src="./bitch.JPG" class="charlie2" />
+<img src="./bitch.JPG" class="charlie3" />
+<img src="./bitch.JPG" class="charlie4" />
+</body>
+
+</html>

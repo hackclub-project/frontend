@@ -1,0 +1,87 @@
+
+
+* {
+margin:0;
+padding:0;
+}
+
+@keyframes lr {
+0% {
+transform: rotate(0deg) translateX(0);
+}
+100% {
+transform: rotate(359deg) translate(100%);
+}
+}
+@keyframes rl {
+0% {
+transform: translateX(100%) rotate(0deg);
+}
+100% {
+transform: translateX(0) rotate(359deg);
+}
+}
+
+.charlie {
+  width: 300px;
+  height: 200px;
+
+  position: fixed;
+top: 40px;
+left: 100px;
+animation: lr 3s infinite alternate ease-in-out
+}
+
+.charlie2 {
+  width: 300px;
+  height: 200px;
+
+  position: fixed;
+top: 40px;
+right: 350px;
+animation: rl  3s infinite alternate ease-in-out;
+}
+
+.charlie3 {
+  width: 300px;
+  height: 200px;
+
+  position: fixed;
+top: 540px;
+left: 100px;
+animation: lr 3s infinite alternate ease-in-out;
+}
+
+.charlie4 {
+  width: 300px;
+  height: 200px;
+
+  position: fixed;
+top: 540px;
+right: 350px;
+animation: rl 3s infinite alternate ease-in-out
+}
+
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+background-image: url("./bitch.JPG");
+background-repeat: no-repeat;
+background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+color: white; 
+}
+
+.child {
+display: flex;
+height: 100%;
+color: white;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+
